@@ -3,7 +3,7 @@ package com.epam.homework1;
 import java.util.Scanner;
 
 public class TrafficLight {
-    static private String LightCheck(int light){
+    static private String lightCheck(int light){
         if(light < 0){
             throw new NumberFormatException("Time can not be less than 0");
         }
@@ -25,7 +25,7 @@ public class TrafficLight {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter time");
         int light = scanner.nextInt() % 10;
-        System.out.println(TrafficLight.LightCheck(light));
+        System.out.println(TrafficLight.lightCheck(light));
     }
 
 }
