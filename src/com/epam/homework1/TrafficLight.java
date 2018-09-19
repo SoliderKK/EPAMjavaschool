@@ -13,8 +13,11 @@ public class TrafficLight {
         else if(light <= 4){
             return "yellow";
         }
-        else {
+        else if(light <= 9){
             return "green";
+        }
+        else{
+            throw new NumberFormatException("Impossible input");
         }
     }
 
