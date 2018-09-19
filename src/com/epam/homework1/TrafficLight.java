@@ -3,23 +3,26 @@ package com.epam.homework1;
 import java.util.Scanner;
 
 public class TrafficLight {
-    static private void LightCheck(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter time");
-        int light = Integer.parseInt(scanner.nextLine()) % 10;
+    static private String LightCheck(int light){
+        if(light < 0){
+            throw new NumberFormatException("Time can not be less than 0");
+        }
         if(light <= 1){
-            System.out.println("red");
+            return "red";
         }
         else if(light <= 4){
-            System.out.println("yellow");
+            return "yellow";
         }
         else {
-            System.out.println("green");
+            return "green";
         }
     }
 
     public static void main(String[] args) {
-        TrafficLight.LightCheck();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter time");
+        int light = scanner.nextInt() % 10;
+        System.out.println(TrafficLight.LightCheck(light));
     }
 
 }
