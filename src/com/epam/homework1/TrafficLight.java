@@ -3,20 +3,17 @@ package com.epam.homework1;
 import java.util.Scanner;
 
 public class TrafficLight {
-    static private String lightCheck(int light){
-        if(light < 0){
+    static private String lightCheck(int light) {
+        if (light < 0) {
             throw new NumberFormatException("Time can not be less than 0");
         }
-        if(light <= 1){
+        if (light <= 1) {
             return "red";
-        }
-        else if(light <= 4){
+        } else if (light <= 4) {
             return "yellow";
-        }
-        else if(light <= 9){
+        } else if (light <= 9) {
             return "green";
-        }
-        else{
+        } else {
             throw new NumberFormatException("Impossible input");
         }
     }
