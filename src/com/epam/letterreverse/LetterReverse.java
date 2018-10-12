@@ -1,4 +1,4 @@
-package com.epam.homework2;
+package com.epam.letterreverse;
 
 import java.util.Scanner;
 

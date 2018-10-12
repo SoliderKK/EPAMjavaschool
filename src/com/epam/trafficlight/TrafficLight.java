@@ -1,4 +1,4 @@
-package com.epam.homework1;
+package com.epam.trafficlight;
 
 import java.util.Scanner;
 

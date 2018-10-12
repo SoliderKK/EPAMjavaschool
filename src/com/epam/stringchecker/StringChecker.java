@@ -1,4 +1,4 @@
-package com.epam.lesson1;
+package com.epam.stringchecker;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -51,7 +51,7 @@ public class StringChecker {
         StringChecker stringChecker = new StringChecker();
         stringChecker.setString(scanner.nextLine());
         if(stringChecker.string.length() < 5) {
-            System.out.println("String input is less than 5");
+            System.err.println("String input is less than 5");
             System.exit(1);
         }
         System.out.println("Third Symbol is \'" + stringChecker.getThirdSymbol() + '\'');
@@ -61,7 +61,7 @@ public class StringChecker {
             int k = scanner.nextInt();
             System.out.println("Symbol at " + k + " is \'" + stringChecker.getSymbolByIndex(k) + '\'');
         } catch (InputMismatchException e) {
-            System.out.println("incorrect input");
+            System.err.println("incorrect input");
             System.exit(1);
         }
         System.out.println("Longest row is " + stringChecker.getRowLenth());
