@@ -8,6 +8,9 @@ public class WordExtractor {
         if (endIndex >= array[0].length || rowIndex >= array.length ) {
             throw new IllegalArgumentException("Index out of bounds");
         }
+        if (rowIndex >= array.length) {
+            throw new IllegalArgumentException("Index out of bounds");
+        }
         if (array.length == 0) {
             throw new IllegalArgumentException("Emty array");
         }
