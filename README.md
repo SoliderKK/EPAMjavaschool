@@ -1,2 +1,2 @@
-# JavaSchoolTrafficLight
-Simple console traffic light
+EPAM java school
+Homework repositiry
